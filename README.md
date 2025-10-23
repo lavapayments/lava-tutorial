@@ -19,7 +19,7 @@ Learn how to integrate multiple AI providers (Groq, Google Gemini, OpenAI) throu
 
 ```bash
 # 1. Clone and install
-git clone <your-repo-url>
+git clone [<your-repo-url>](https://github.com/lavapayments/lava-tutorial.git)
 cd lava-tutorial
 npm install
 

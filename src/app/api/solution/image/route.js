@@ -38,9 +38,9 @@ export async function POST(request) {
 
     // TODO #3 SOLUTION: Configure the Lava API URL for image analysis
     // Default to Gemini 2.0 if user has not yet configured their env variables.
-    const lavaBaseUrl = process.env.LAVA_BASE_URL || 'https://api.lavapayments.com/v1/forward?u=';
+    const lavaForwardUrl = process.env.LAVA_FORWARD_URL || 'https://api.lavapayments.com/v1/forward?u=';
     const imageApiUrl = process.env.AI_IMAGE_URL || 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
-    const lavaApiUrl = lavaBaseUrl + imageApiUrl;
+    const lavaApiUrl = lavaForwardUrl + imageApiUrl;
 
     // TODO #4 SOLUTION: Fetch the image and convert it to base64
     let base64Image;

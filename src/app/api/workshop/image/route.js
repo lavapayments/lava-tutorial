@@ -18,9 +18,9 @@ export async function POST(request) {
         
     const encodedForwardToken = ""; // TODO: Replace with your encoded forward token
 
-    // TODO #3: Configure the Lava API URL for image analysis
-    // Hint: You can construct this as lavaApiUrl = lavaBaseURL + imageApiUrl
-    // Hint: You should have configured lavaBaseURL in the environment variables
+    // TODO #3: Configure the Lava forward API URL for image analysis
+    // Hint: You can construct this as lavaApiUrl = lavaFowardUrl + imageApiUrl
+    // Hint: You should have configured lavaFowardUrl in the environment variables
     // Hint: You should have configured the imageApiUrl in the environment variables (points to Gemini)
 
     const lavaApiUrl = ""; // TODO: Replace with your Lava API URL

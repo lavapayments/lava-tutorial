@@ -18,9 +18,9 @@ export async function POST(request) {
 
     const encodedForwardToken = ""; // TODO: Replace with your encoded forward token
 
-    // TODO #3: Configure the Lava API URL for text-to-speech
-    // Hint: You can construct this as lavaApiUrl = lavaBaseURL + voiceApiUrl
-    // Hint: You should have configured lavaBaseURL in the environment variables
+    // TODO #3: Configure the Lava forward API URL for text-to-speech
+    // Hint: You can construct this as lavaApiUrl = lavaForwardURL + voiceApiUrl
+    // Hint: You should have configured lavaForwardURL in the environment variables
     // Hint: You should have configured the voiceApiUrl in the environment variables (points to OpenAI TTS)
 
     const lavaApiUrl = ""; // TODO: Replace with your Lava API URL

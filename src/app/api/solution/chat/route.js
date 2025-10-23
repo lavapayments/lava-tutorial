@@ -32,9 +32,9 @@ export async function POST(request) {
 
     // TODO #3 SOLUTION: Configure the Lava API URL
     // Default to Groq if user has not yet configured their env variables.
-    const lavaBaseUrl = process.env.LAVA_BASE_URL || 'https://api.lavapayments.com/v1/forward?u=';
+    const lavaForwardUrl = process.env.LAVA_FORWARD_URL || 'https://api.lavapayments.com/v1/forward?u=';
     const chatEndpoint = process.env.AI_CHAT_URL || 'https://api.groq.com/openai/v1/chat/completions';
-    const lavaApiUrl = lavaBaseUrl + chatEndpoint;
+    const lavaApiUrl = lavaForwardUrl + chatEndpoint;
     const model = 'llama-3.1-8b-instant';
 
     // TODO #4 SOLUTION: Call the Lava API

@@ -13,7 +13,7 @@ Learn how to integrate multiple AI providers (Groq, Google Gemini, OpenAI) throu
 - [Node.js](https://nodejs.org/) v18+ and npm
 - Basic JavaScript/React knowledge
 - Lava API key from [Lava Dashboard](https://www.lavapayments.com/dashboard/build/keys)
-- Funds in your Lava account (make sure to claim our $10 of credits!)
+- Funds in your Lava account (make sure to claim your $10 of credits!)
 
 ## Quick Start
 
@@ -90,8 +90,8 @@ lava-tutorial/
 Lava Build is a **API gateway** for 20+ AI providers:
 
 ```javascript
-// Single endpoint pattern
-const lavaEndpoint = `${LAVA_BASE_URL}${AI_PROVIDER_ENDPOINT}`;
+// Single API endpoint pattern
+const lavaForwardUrl = `${LAVA_FORWARD_URL}${AI_PROVIDER_API_URL}`;
 
 // Authenticated with forward token
 const lavaForwardToken = {
@@ -101,7 +101,7 @@ const lavaForwardToken = {
 };
 const encodedToken = Buffer.from(JSON.stringify(lavaForwardToken)).toString('base64');
 
-fetch(lavaEndpoint, {
+fetch(lavaForwardUrl, {
   headers: { 'Authorization': `Bearer ${encodedToken}` },
   // ... provider-specific body
 });

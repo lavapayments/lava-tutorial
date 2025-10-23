@@ -20,8 +20,8 @@ export async function POST(request) {
     const encodedForwardToken = ""; // TODO: Replace with your encoded forward token
 
     // TODO #3: Configure the Lava API URL
-    // Hint: You can construct this as lavaApiUrl = lavaBaseURL + chatApiUrl
-    // Hint: You should haveconfigured lavaBaseURL in the environment variables
+    // Hint: You can construct this as lavaApiUrl = lavaForwardURL + chatApiUrl
+    // Hint: You should have configured lavaForwardURL in the environment variables
     // Hint: You should have configured the chatApiUrl in the environment variables
 
     const lavaApiUrl = ""; // TODO: Replace with your Lava API URL

@@ -37,9 +37,9 @@ export async function POST(request) {
 
     // TODO #3 SOLUTION: Configure the Lava API URL for text-to-speech
     // Default to OpenAI TTS if user has not yet configured their env variables.
-    const lavaBaseUrl = process.env.LAVA_BASE_URL || 'https://api.lavapayments.com/v1/forward?u=';
+    const lavaForwardUrl = process.env.LAVA_FORWARD_URL || 'https://api.lavapayments.com/v1/forward?u=';
     const ttsApiUrl = process.env.AI_VOICE_URL || 'https://api.openai.com/v1/audio/speech';
-    const lavaApiUrl = lavaBaseUrl + ttsApiUrl;
+    const lavaApiUrl = lavaForwardUrl + ttsApiUrl;
 
     // TODO #4 SOLUTION: Call the Lava API with OpenAI TTS format
     const response = await fetch(lavaApiUrl, {

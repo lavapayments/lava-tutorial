@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import Link from 'next/link';
 
 export default function WorkshopVoice() {
-  const [text, setText] = useState('The treasure is hidden in the ancient temple');
+  const [text, setText] = useState('I\'m so excited for my weekend ahead at Cal Hacks');
   const [audioUrl, setAudioUrl] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -81,7 +81,7 @@ export default function WorkshopVoice() {
                 className="w-full px-4 py-3 rounded-lg border border-gray-800 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#ff5a1f] disabled:opacity-50 resize-none"
               />
               <p className="mt-2 text-xs text-gray-500">
-                Try: "The treasure is hidden in the ancient temple"
+                Try: "I'm so excited for my weekend ahead at Cal Hacks"
               </p>
             </div>
             <button

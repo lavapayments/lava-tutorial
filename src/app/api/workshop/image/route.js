@@ -78,7 +78,7 @@ export async function POST(request) {
     });
     */
 
-    const response = await fetch(); // TODO: Replace with your fetch request
+    const response = ""; // TODO: Replace with your fetch request
 
     // TODO #6: Parse and return the analysis
     // Hint: Extract the analysis from Gemini's response structure

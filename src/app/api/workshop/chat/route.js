@@ -44,7 +44,7 @@ export async function POST(request) {
     // Hint: You can learn more about models supported by Groq at https://console.groq.com/docs/models
     // Hint: an example model supported by Groq is 'llama-3.1-8b-instant'
 
-    const response = await fetch(); // TODO: Replace with your fetch request
+    const response = ""; // TODO: Replace with your fetch request
 
     // TODO #5: Parse and return the response
     // Hint: Extract the AI message from the response

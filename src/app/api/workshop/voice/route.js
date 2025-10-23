@@ -43,7 +43,7 @@ export async function POST(request) {
     */
     // Hint: You can learn more about OpenAI TTS at https://platform.openai.com/docs/guides/text-to-speech
 
-    const response = await fetch(); // TODO: Replace with your fetch request
+    const response = ""; // TODO: Replace with your fetch request
 
     // TODO #5: Handle the audio response
     // Hint: OpenAI TTS returns audio data that needs to be converted to base64 for the browser

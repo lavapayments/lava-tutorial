@@ -36,10 +36,10 @@ export async function POST(request) {
     try {
       const imageResponse = await fetch(imageUrl);
       const imageBuffer = await imageResponse.arrayBuffer();
-      const base64Image = Buffer.from(imageBuffer).toString('base64');
+      base64Image = Buffer.from(imageBuffer).toString('base64');
     
-    // Get the MIME type from response headers
-    mimeType = imageResponse.headers.get('content-type') || 'image/jpeg';
+      // Get the MIME type from response headers
+      mimeType = imageResponse.headers.get('content-type') || 'image/jpeg';
     } catch (error) {
       console.error('Error fetching image:', error);
       return Response.json(
